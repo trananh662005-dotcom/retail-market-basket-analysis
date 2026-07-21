@@ -28,7 +28,7 @@ The analysis combines **Market Basket Analysis (MBA)**, **Customer Segmentation*
 - [Project Outcomes](#project-outcomes)
 - [Future Improvements](#future-improvements)
 
-## Business Problem
+## ⚠️ Business Problem
 
 Retail businesses generate thousands of daily transactions, but valuable purchasing patterns often remain hidden.
 
@@ -36,7 +36,7 @@ Without understanding which products are frequently purchased together or which 
 
 This project applies Market Basket Analysis (MBA) and Customer Segmentation to transform transactional data into actionable business insights.
 
-## Business Questions
+## ❓ Business Questions
 
 This project aims to answer the following business questions:
 
@@ -45,10 +45,10 @@ This project aims to answer the following business questions:
 - Which customer segments generate the highest business value?
 - How can Revenue, Average Order Value (AOV), Basket Size and Customer Retention Rate (CRR) be improved?
 
-## Dataset
+## 🗂 Dataset
 ### Source
 - [Retail POS Dataset for Market Basket Analysis](https://www.kaggle.com/datasets/arunsworkspace/retail-pos-dataset-for-market-basket-analysis)
-## Dataset Overview
+### Dataset Overview
 
 | Metric | Value |
 |:----------------------|------:|
@@ -59,7 +59,7 @@ This project aims to answer the following business questions:
 | Categories | 13 |
 | Total Revenue | 5.16M USD |
 
-## Methodology
+## 📖 Methodology
 
 This project applies **Market Basket Analysis (MBA)**, a data mining technique used to discover associations between products that are frequently purchased together within transactional datasets. By identifying these purchasing patterns, businesses can better understand customer buying behavior and develop data-driven strategies for merchandising, product bundling, cross-selling, and promotional campaigns.
 
@@ -67,9 +67,9 @@ The analysis follows the **Association Rule Mining** approach, where each transa
 
 In addition to product association analysis, the project incorporates **Customer Segmentation** and **Business Intelligence (BI)** techniques to evaluate customer purchasing behavior, monitor key business KPIs, and translate analytical findings into actionable business recommendations.
 
-## Metrics & Formulas
+## 📊 Metrics & Formulas
 
-### Association Rule Metrics
+### 📐 Association Rule Metrics
 
 | Metric | Formula | Business Meaning |
 |:-------|:--------|:-----------------|
@@ -84,7 +84,7 @@ In addition to product association analysis, the project incorporates **Customer
 >
 > While Support and Confidence measure purchase frequency and conditional probability, **Lift** is the primary metric used in this project to identify meaningful product associations because it accounts for the expected frequency of products occurring together by chance. Product pairs with **Lift > 1** are considered good candidates for cross-selling and product bundling strategies.
 
-### Business Metrics
+### 📊 Business Metrics
 
 | Metric | Formula | Business Meaning |
 |:-------|:--------|:-----------------|
@@ -97,7 +97,7 @@ In addition to product association analysis, the project incorporates **Customer
 | **Total Spend per Customer** | Σ(total_amount) by customer | Total amount spent by an individual customer across all purchases. |
 | **Customer Retention Rate (CRR)** | (End Customers - New Customers) ÷ Start Customers | Percentage of existing customers who remained active from the previous period, excluding newly acquired customers. |
 
-### Customer Segmentation
+## 👥 Customer Segmentation
 
 Customers were segmented using a **rule-based approach** based on two purchasing behavior metrics:
 
@@ -115,7 +115,7 @@ Both metrics were ranked into quartiles using the SQL Server `NTILE(4)` window f
 
 This segmentation enables the business to compare customer value, purchasing behavior, and retention performance across different customer groups.
 
-## Workflow
+## 🛠 Workflow
 ```mermaid
 flowchart LR
     A[Kaggle API] --> B[Excel<br/>Data Cleaning]
@@ -186,7 +186,7 @@ flowchart LR
 - **Business Recommendations**
   - Deliver data-driven insights and measurable OKRs for improving cross-selling effectiveness, customer retention, and revenue growth.
 
-# Dashboard Overview
+## 📈 Dashboard Overview
 
 The Power BI dashboard is organized into four interactive pages, each designed to answer a specific business question. Users can explore the analysis dynamically using slicers for **Category**, **Time (Year/Quarter/Month)**, **Customer Segment**, and **Link Type**.
 
@@ -199,34 +199,34 @@ The Power BI dashboard is organized into four interactive pages, each designed t
 
 ---
 
-## Dashboard Preview
+### Dashboard Preview
 
-### Executive KPI Dashboard
+#### Executive KPI Dashboard
 
 ![Executive Dashboard](images/executive_dashboard.png)
 
 ---
 
-### Market Basket Analysis
+#### Market Basket Analysis
 
 ![Market Basket Analysis](images/market_basket_analysis.png)
 
 ---
 
-### Cross-selling Opportunity
+#### Cross-selling Opportunity
 
 ![Cross-selling Opportunity](images/cross_selling_opportunity.png)
 
 ---
 
-### Customer Analysis
+#### Customer Analysis
 
 ![Customer Analysis](images/customer_analysis.png)
 
 ---
-# Business Insights & Recommendations
+## 💡 Business Insights & Recommendations
 
-## Executive Summary
+### Executive Summary
 
 - **Cross-category** purchases generate **higher revenue** than within-category purchases.
 - **Dairy & Eggs, Grains & Staples, Beverages, and Fruits & Vegetables** show strong cross-selling potential.
@@ -235,20 +235,20 @@ The Power BI dashboard is organized into four interactive pages, each designed t
 - **Occasional Buyers** contribute the **highest revenue** but have **lower AOV** than Premium Buyers.
 - Product bundling and category optimization present the largest opportunities for increasing Revenue, AOV, and Basket Size.
 
-## Insight 1: Optimize Product Category Placement
+### Insight 1: Optimize Product Category Placement
 
-### Finding
+#### Finding
 **Cross-category** purchases generate **higher revenue** than within-category purchases, indicating that customers frequently buy complementary products across different product categories.
 
-### Business Impact
+#### Business Impact
 The current store layout may not fully support customers' natural shopping journeys. Placing complementary categories far apart increases shopping effort and reduces impulse purchases. Optimizing category adjacency can improve cross-selling opportunities and increase Average Basket Size.
 
-### Recommendation
+#### Recommendation
 - Rearrange store shelves by placing **high-affinity categories** closer together based on **Lift** and **Revenue Contribution**.
 - Prioritize category combinations such as **Dairy & Eggs**, **Grains & Staples**, **Beverages**, **Fruits & Vegetables**, and **Household–Electronics** for merchandising redesign.
 - Review category adjacency quarterly using updated MBA results.
 
-### Proposed KPIs & OKRs
+#### Proposed KPIs & OKRs
 
 **Objective**
 
@@ -262,21 +262,21 @@ Improve merchandising efficiency through data-driven category placement.
 
 ---
 
-## Insight 2: Improve Customer Retention During Low-Performance Months
+### Insight 2: Improve Customer Retention During Low-Performance Months
 
-### Finding
+#### Finding
 **Customer Retention Rate (CRR)** declines during **March, September, and November**, indicating weaker repeat purchasing behavior during these periods.
 
-### Business Impact
+#### Business Impact
 Lower retention reduces repeat purchases and long-term customer value, making revenue growth increasingly dependent on acquiring new customers instead of retaining existing ones.
 
-### Recommendation
+#### Recommendation
 - Launch seasonal loyalty campaigns before historically low-retention months.
 - Re-engage inactive customers using personalized coupons and promotional offers.
 - Recommend complementary products based on previous purchasing behavior.
 - Monitor monthly Customer Retention Rate to identify early signs of customer churn.
 
-### Proposed KPIs & OKRs
+#### Proposed KPIs & OKRs
 
 **Objective**
 
@@ -290,21 +290,21 @@ Strengthen customer loyalty during seasonal low-retention periods.
 
 ---
 
-## Insight 3: Increase Customer Value Through Product Bundling
+### Insight 3: Increase Customer Value Through Product Bundling
 
-### Finding
+#### Finding
 **Occasional Buyers** represent the largest customer segment and generate the highest revenue, yet their **Average Order Value (AOV)** and **Average Basket Size** remain lower than those of Premium and Regular Buyers. Meanwhile, **Low Value Buyers** account for a sizeable share of customers but contribute relatively little revenue.
 
-### Business Impact
+#### Business Impact
 The business currently relies on transaction volume rather than maximizing customer value. Increasing the value of existing customers presents a significant revenue opportunity without relying solely on customer acquisition.
 
-### Recommendation
+#### Recommendation
 - Develop promotional bundles using high-affinity product pairs identified through Market Basket Analysis, such as **Butter–Milk**, **Bread–Pastry**, **Baby Food–Milk**, **Vitamin–Soda**, and **Potato–Bread**.
 - Highlight these bundles through **in-store displays** and **online product recommendations** to encourage complementary purchases.
 - Offer bundles at **different price levels** to appeal to a wider range of customers.
 - Continuously monitor bundle performance using **Revenue**, **AOV**, **Average Basket Size**, **Lift**, and **Customer Retention Rate**.
 
-### Proposed KPIs & OKRs
+#### Proposed KPIs & OKRs
 
 **Objective**
 
@@ -316,7 +316,7 @@ Increase customer value through effective product bundling and cross-selling str
 - Increase **Average Basket Size** from **10.09 → 10.80 items** (+7.0%).
 - Increase **Revenue** generated by **Premium, Regular, and Low Value Buyers** by **10%**.
 
-# Overall Proposed KPIs & OKRs
+## 🎯 Overall Proposed KPIs & OKRs
 
 | Business Objective | KPI | Current | Target |
 |--------------------|-----|---------|--------|
@@ -325,7 +325,7 @@ Increase customer value through effective product bundling and cross-selling str
 | Improve customer loyalty | Customer Retention Rate | **25.4–31.3%** | **29–32%** per months |
 | Improve product association | Average Lift | **0.97** | **1.50 (+54.6%)** |
 
-# Project Outcomes
+## 🏆 Project Outcomes
 
 This project demonstrates an end-to-end business-oriented data analytics workflow, from raw transactional data to actionable business recommendations.
 
@@ -345,7 +345,7 @@ This project demonstrates an end-to-end business-oriented data analytics workflo
 - Suggested customer retention initiatives for seasonal low-performance periods.
 - Established measurable KPIs and OKRs for evaluating future business performance.
 
-# Future Improvements
+## 🚀 Future Improvements
 
 Although this project provides actionable business insights, several enhancements could further improve its practical value.
 
@@ -357,7 +357,7 @@ Although this project provides actionable business insights, several enhancement
 - Evaluate recommendation performance through A/B testing and conversion analysis.
 - Deploy the Power BI dashboard through Power BI Service for real-time business monitoring.
 
-# Author
+## 👤 Author
 
 **Tran Anh**
 
