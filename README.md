@@ -2,7 +2,7 @@
 
 Business-oriented Market Basket Analysis using SQL Server, Power BI, DAX and Excel to identify purchasing patterns, customer behavior and cross-selling opportunities.
 
-## Project Overview
+## 📌 Project Overview
 
 This project analyzes a simulated retail transaction dataset to uncover customer purchasing behavior and generate actionable business recommendations.
 
@@ -12,7 +12,7 @@ The analysis combines **Market Basket Analysis (MBA)**, **Customer Segmentation*
 - How can **Revenue**, **Average Order Value (AOV)**, and **Customer Retention Rate (CRR)** be improved?
 - Which **customer segments** generate the highest business value?
 
-## Table of Contents
+## 📑 Table of Contents
 
 - [Project Overview](#project-overview)
 - [Business Problem](#business-problem)
@@ -27,7 +27,6 @@ The analysis combines **Market Basket Analysis (MBA)**, **Customer Segmentation*
 - [Overall Proposed KPIs & OKRs](#overall-proposed-kpis--okrs)
 - [Project Outcomes](#project-outcomes)
 - [Future Improvements](#future-improvements)
-- [Repository Structure](#repository-structure)
 
 ## Business Problem
 
@@ -227,7 +226,14 @@ The Power BI dashboard is organized into four interactive pages, each designed t
 ---
 # Business Insights & Recommendations
 
+## Executive Summary
 
+- **Cross-category** purchases generate **higher revenue** than within-category purchases.
+- **Dairy & Eggs, Grains & Staples, Beverages, and Fruits & Vegetables** show strong cross-selling potential.
+- High-affinity product pairs (e.g., **Butter–Milk, Bread–Pastry, Orange-Milk, Rice-Milk, and Baby Food–Milk**) offer strong opportunities for **product bundling, cross-selling, and promotional merchandising**.
+- **Customer Retention Rate** declines during **March, September, and November**.
+- **Occasional Buyers** contribute the **highest revenue** but have **lower AOV** than Premium Buyers.
+- Product bundling and category optimization present the largest opportunities for increasing Revenue, AOV, and Basket Size.
 
 ## Insight 1: Optimize Product Category Placement
 
@@ -318,3 +324,43 @@ Increase customer value through effective product bundling and cross-selling str
 | Increase basket value | Average Basket Size | **10.09** | **10.80 (+7.0%)** |
 | Improve customer loyalty | Customer Retention Rate | **25.4–31.3%** | **29–32%** per months |
 | Improve product association | Average Lift | **0.97** | **1.50 (+54.6%)** |
+
+# Project Outcomes
+
+This project demonstrates an end-to-end business-oriented data analytics workflow, from raw transactional data to actionable business recommendations.
+
+### Technical Deliverables
+
+- Cleaned and prepared a simulated retail transaction dataset.
+- Designed a star schema data model for business intelligence.
+- Built SQL analytical views for Market Basket Analysis and customer behavior analysis.
+- Developed interactive Power BI dashboards with dynamic filtering and DAX measures.
+- Implemented customer segmentation based on purchasing behavior.
+
+### Business Deliverables
+
+- Identified high-potential cross-selling opportunities.
+- Recommended category layout optimization based on product affinity.
+- Proposed product bundling strategies to improve Average Order Value (AOV).
+- Suggested customer retention initiatives for seasonal low-performance periods.
+- Established measurable KPIs and OKRs for evaluating future business performance.
+
+# Future Improvements
+
+Although this project provides actionable business insights, several enhancements could further improve its practical value.
+
+- Integrate real-world retail transaction data instead of simulated data.
+- Incorporate pricing, promotions, and discount information into Market Basket Analysis.
+- Develop customer-specific product recommendation models using collaborative filtering or machine learning.
+- Build automated ETL pipelines to refresh dashboards periodically.
+- Expand customer segmentation using RFM analysis and Customer Lifetime Value (CLV).
+- Evaluate recommendation performance through A/B testing and conversion analysis.
+- Deploy the Power BI dashboard through Power BI Service for real-time business monitoring.
+
+# Author
+
+**Tran Anh**
+
+- LinkedIn: www.linkedin.com/in/anh-trần-thị-minh-481789291
+- GitHub: https://github.com/trananh662005-dotcom
+- Email: trananh662005@gmail.com
