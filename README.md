@@ -14,19 +14,19 @@ The analysis combines **Market Basket Analysis (MBA)**, **Customer Segmentation*
 
 ## 📑 Table of Contents
 
-- [Project Overview](#project-overview)
-- [Business Problem](#business-problem)
-- [Business Questions](#business-questions)
-- [Dataset](#dataset)
-- [Methodology](#methodology)
-- [Metrics & Formulas](#metrics--formulas)
-- [Customer-Segmentation](#customer-segmentation)
-- [Workflow](#workflow)
-- [Dashboard Overview](#dashboard-overview)
-- [Business Insights & Recommendations](#business-insights--recommendations)
-- [Overall Proposed KPIs & OKRs](#overall-proposed-kpis--okrs)
-- [Project Outcomes](#project-outcomes)
-- [Future Improvements](#future-improvements)
+- [Project Overview](#-project-overview)
+- [Business Problem](#-business-problem)
+- [Business Questions](#-business-questions)
+- [Dataset](#-dataset)
+- [Methodology](#-methodology)
+- [Metrics & Formulas](#-metrics--formulas)
+- [Customer-Segmentation](#-customer-segmentation)
+- [Workflow](#-workflow)
+- [Dashboard Overview](#-dashboard-overview)
+- [Business Insights & Recommendations](#-business-insights--recommendations)
+- [Overall Proposed KPIs & OKRs](#-overall-proposed-kpis--okrs)
+- [Project Outcomes](#-project-outcomes)
+- [Future Improvements](#-future-improvements)
 
 ## ⚠️ Business Problem
 
