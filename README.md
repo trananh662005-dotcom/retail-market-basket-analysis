@@ -165,3 +165,42 @@ flowchart LR
 
 - **Business Recommendations**
   - Deliver data-driven insights and measurable OKRs for improving cross-selling effectiveness, customer retention, and revenue growth.
+
+# Dashboard Overview
+
+The Power BI dashboard is organized into four interactive pages, each designed to answer a specific business question. Users can explore the analysis dynamically using slicers for **Category**, **Time (Year/Quarter/Month)**, **Customer Segment**, and **Link Type**.
+
+| Dashboard | Purpose |
+|-----------|---------|
+| **Executive KPI Dashboard** | Provides an overview of key business metrics including Revenue, Average Order Value (AOV), Average Basket Size, Revenue MoM %, and high-level business findings. |
+| **Market Basket Analysis** | Examines product associations using Support, Confidence, Lift, Leverage, and Conviction to identify frequently purchased item pairs. |
+| **Cross-selling Opportunity** | Identifies high-potential category pairs for merchandising optimization and cross-selling through Revenue Contribution and category relationship analysis. |
+| **Customer Analysis** | Evaluates customer behavior across different segments using Customer Retention Rate (CRR), Average Spend, Average Basket Size, AOV, and purchasing patterns. |
+
+---
+
+## Dashboard Preview
+
+### Executive KPI Dashboard
+
+![Executive Dashboard](images/executive_dashboard.png)
+
+---
+
+### Market Basket Analysis
+
+![Market Basket Analysis](images/market_basket_analysis.png)
+
+---
+
+### Cross-selling Opportunity
+
+![Cross-selling Opportunity](images/cross_selling_opportunity.png)
+
+---
+
+### Customer Analysis
+
+![Customer Analysis](images/customer_analysis.png)
+
+---
