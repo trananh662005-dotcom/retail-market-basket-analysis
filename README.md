@@ -361,6 +361,7 @@ Although this project provides actionable business insights, several enhancement
 
 **Tran Anh**
 
+Final-year International Business student passionate about Data Analytics.
 - LinkedIn: www.linkedin.com/in/anh-trần-thị-minh-481789291
 - GitHub: https://github.com/trananh662005-dotcom
 - Email: trananh662005@gmail.com
