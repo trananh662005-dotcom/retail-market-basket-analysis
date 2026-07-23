@@ -118,7 +118,7 @@ This segmentation enables the business to compare customer value, purchasing beh
 ## 🛠 Workflow
 ```mermaid
 flowchart LR
-    A[Kaggle API] --> B[Excel<br/>Data Cleaning]
+    A[Data Collection] --> B[Excel<br/>Data Cleaning]
     B --> C[SQL Server<br/>Star Schema & SQL Views]
     C --> D[Power BI<br/>Data Model & DAX & Interactive Dashboard]
     D --> E[Business Insights & Recommendations]
